@@ -12,8 +12,8 @@ The ultimate solution for gamers.
 
 ### How do I get set up? ###
 
-* Set configurations into appsettings.json
-* run `Update-Database` in Package Manager
+1. Set configurations into appsettings.json
+1. run `Update-Database` in Package Manager
 
 * Summary of set up
 * Configuration
