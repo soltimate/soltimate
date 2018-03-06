@@ -10,11 +10,13 @@ The ultimate solution for gamers.
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 
-### How do I get set up? ###
+## How do I get set up? ##
 
+### Development w/ VS2017 ###
 1. Set configurations into appsettings.json
 1. run `Update-Database` in Package Manager
 
+### Production ###
 * Summary of set up
 * Configuration
 * Dependencies
