@@ -1,0 +1,26 @@
+﻿/// <reference path="CssSettings.scss" />
+//   ______________________________________________________
+//  | Scss functions.
+//  |------------------------------------------------------
+//  | Allows Defining common functions.
+//  | Or as sass names them, @mixin.
+//  |
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin gradient-background-img($bottomColor, $topColor) {
+    background-image: -webkit-linear-gradient(bottom, $bottomColor, $topColor);
+    background-image: -moz-linear-gradient(bottom, $bottomColor, $topColor);
+    background-image: -o-linear-gradient(bottom, $bottomColor, $topColor);
+    background-image: linear-gradient(to top, $bottomColor, $topColor);
+}
+
+@mixin clear-background($color: transparent) {
+    background-image: none;
+    background: none;
+    background-color: $color;
+}

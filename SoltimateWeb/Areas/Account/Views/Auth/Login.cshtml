@@ -1,0 +1,48 @@
+﻿@using System.Collections.Generic
+@using System.Linq
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Authentication
+@model LoginViewModel
+@inject SignInManager<SoltimateUser> SignInManager
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div id="loginBlock">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+        <div class="form-group">
+            <label asp-for="Email">Account Email</label>
+            <input asp-for="Email" class="form-control" aria-describedby="emailHelp" />
+            <span asp-validation-for="Email" class="text-danger" id="emailHelp"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Account Password</label>
+            <input asp-for="Password" class="form-control" aria-describedby="passwordHelp" />
+            <span asp-validation-for="Password" class="text-danger" id="passwordHelp"></span>
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label asp-for="RememberMe">
+                    <input asp-for="RememberMe" />
+                    @Html.DisplayNameFor(m => m.RememberMe)
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+    </form>
+    <hr />
+    <div class="form-group">
+        <p>
+            <a asp-action="ForgotPassword">Forgot your password?</a>
+        </p>
+        <p>
+            <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Register as a new user?</a>
+        </p>
+    </div>
+</div>
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

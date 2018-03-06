@@ -1,0 +1,43 @@
+﻿/// <reference path="CssSettings.scss" />
+/// <reference path="ScssFunctions.scss" />
+//   ______________________________________________________
+//  | Base - base style says that wherever this element is
+//  | on the page, it should look like this.
+//  |------------------------------------------------------
+//  | Includes single element selectors, attribute selectors,
+//  | pseudo-class selectors, child and sibling selectors.
+//  |
+
+/**
+ * Common elements.
+ */
+
+html {
+    //The font size set here will affect the rem size.
+    font-size: $fsize-main;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: $header-font-color;
+}
+
+body {
+    font-size: $fsize-main;
+    font-family: $ffamily-main;
+    color: $main-font-color;
+    background-color: $main-bg-color;
+    padding-top: 4rem;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    color: $main-font-color;
+}
+
+a:hover {
+    text-decoration: underline;
+}

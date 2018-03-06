@@ -1,0 +1,15 @@
+﻿/// <reference path="CssSettings.scss" />
+/// <reference path="ScssFunctions.scss" />
+//   ______________________________________________________
+//  | Module -  reusable, modular parts of design.
+//  |------------------------------------------------------
+//  | Modules are the callouts, the sidebar sections,
+//  | the product lists and so on.
+//  | Keep module names as specific as possible.
+//
+
+#loginBlock {
+    max-width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+﻿/// <reference path="CssSettings.scss" />
+/// <reference path="ScssFunctions.scss" />
+//   ______________________________________________________
+//  | State - how modules or layouts look in each state.
+//  |------------------------------------------------------
+//  | Is it hidden or expanded? Is it active or inactive?
+//  | State is about describing how a module or layout
+//  | looks on screens that are smaller or bigger.
+//  |
+//  | Commonly start the naming by .is-
+//  | For example .is-active
+//  |

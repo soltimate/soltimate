@@ -1,0 +1,26 @@
+﻿// The css structure is based on CSS architecture model SMACSS. The model is based on categorization. We categorize the rules into separate blocks that are easier to handle.
+// In SMACSS there are 5 categories: Base, Layout, Module, State and Theme. For scss purposes we will also add settings and functions.
+//
+// Read more about SMACSS at https://smacss.com/book/categorizing
+
+
+// On top of the architecture there is also list of good practices guiding the produced css.
+// 1. For transparency, use rgba. Otherwise, always use the hexadecimal format.
+// 2. Favor transitions over animations. Only animate opacity and transform.
+// 3. Use unitless values when possible.
+// 4. Favor rem over em. And try to keep away from px related rules when possible.
+// 5. Prefer seconds over milliseconds.
+
+
+// First we import the settings.
+@import "CssSettings";
+
+// Next we import the sass functions that will be used later.
+@import "ScssFunctions";
+
+// Next we import all of the SMACSS parts in their preferred order.
+@import "Base";
+@import "Layout";
+@import "Module";
+@import "State";
+@import "Theme";

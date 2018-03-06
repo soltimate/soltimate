@@ -1,0 +1,14 @@
+﻿<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js" asp-append-version="false"></script>
+    <script src="~/lib/popper.js/dist/umd/popper.js" asp-append-version="false"></script>
+    <script src="~/lib/tether/dist/js/tether.js" asp-append-version="false"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="false"></script>
+    <script src="~/js/site.js" asp-append-version="false"></script>
+</environment>
+<environment exclude="Development">
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/popper.js/dist/umd/popper.min.js" asp-append-version="true"></script>
+    <script src="~/lib/tether/dist/js/tether.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js" asp-append-version="true"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</environment>

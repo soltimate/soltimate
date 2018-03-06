@@ -1,0 +1,21 @@
+﻿//   ______________________________________________________
+//  | Site settings.
+//  |------------------------------------------------------
+//  | Allows Defining common values that will be used later.
+//  |
+
+//Define the font families.
+$ffamily-main: 'Source Sans Pro', sans-serif;
+$ffamily-header: 'Source Sans Pro', sans-serif;
+
+//Define font sizes.
+$fsize-main: 100%;
+
+//Common colors for base look of the website.
+$main-font-color: #1a1a1a;
+$header-font-color: lighten($main-font-color, 15%);
+$main-bg-color: #d9d9d9;
+
+$main-border-color: rgba(0, 0, 0, .9);//#000000;
+$light-shadow: rgba(255, 255, 255, .1);
+$dark-shadow: rgba(0, 0, 0, .6);
